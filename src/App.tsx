@@ -33,9 +33,17 @@ function App() {
   }, [container]);
   return (
     <div>
-      <div id="container" style={{ height: "300px" }} ref={setContainer}></div>
-      <div style={{ height: "100px", backgroundColor: "gray" }}> </div>
-      <div style={{ height: "300px" }}>
+      <div
+        id="container"
+        style={{ height: "300px", border: "12px solid green" }}
+        ref={setContainer}
+      ></div>
+      <h1
+        style={{ textAlign: "center", backgroundColor: "blue", color: "white" }}
+      >
+        I am divider
+      </h1>
+      <div style={{ height: "300px", border: "12px solid green" }}>
         <Editor
           value={code}
           theme="myCustomTheme"
